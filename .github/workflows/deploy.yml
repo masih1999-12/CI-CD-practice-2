@@ -7,9 +7,9 @@ on:
 jobs:
   test:
     env:
-      MONGODB_CLUSTER_ADDRESS: cluster0.kud8p.mongodb.net
-      MONGODB_USERNAME: msh77742
-      MONGODB_PASSWORD: PFFuTbN56ir3GH5j
+      MONGODB_CLUSTER_ADDRESS: ${{ secrets.MONGODB_CLUSTER_ADDRESS }}
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       MONGODB_DB_NAME: Cluster0
       PORT: 8080
     environment: testing
